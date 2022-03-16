@@ -28,6 +28,7 @@ jobs:
     # Get the EKS credentials so we can deploy to the cluster
     - run: |-
         aws eks list-clusters
+        kubectl config get-contexts
         aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
         
               
