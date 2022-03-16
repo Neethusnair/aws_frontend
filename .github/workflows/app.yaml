@@ -6,7 +6,7 @@ on:
     - main
 
 env:
-  EKS_CLUSTER: QA
+  EKS_CLUSTER: newnirmata
   EKS_REGION: us-east-2
 
 jobs:
