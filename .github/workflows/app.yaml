@@ -28,7 +28,8 @@ jobs:
     # Get the EKS credentials so we can deploy to the cluster
     - run: |-
         aws eks list-clusters
-        aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
+        nctl kubeconfig update --token ${{ secrets.NIRMATA_TOKEN }}
+        #aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
         kubectl config get-contexts
         
               
