@@ -41,6 +41,7 @@ jobs:
         aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
         nctl kubeconfig update --token ${{ secrets.NIRMATA_TOKEN }}
         kubectl config get-contexts
+        kubectl config use-context newnirmata
         
               
     # Login to Jfrog
