@@ -24,6 +24,16 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.EKS_REGION }}
+        
+   
+   # Install nctl
+    - name: Set up nctl
+      run: |-
+       curl -LO https://nirmata-downloads.s3.us-east-2.amazonaws.com/nctl/nctl_3.2.3/nctl_3.2.3_linux_64-bit.zip
+       unzip nctl_3.2.3_linux_64-bit.zip
+       chmod 755 nctl
+       mv nctl /usr/local/bin/
+       #echo $PATH        
 
     # Get the EKS credentials so we can deploy to the cluster
     - run: |-
