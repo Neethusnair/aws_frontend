@@ -6,7 +6,7 @@ on:
     - main
 
 env:
-  EKS_CLUSTER: newnirmata
+  EKS_CLUSTER: dev
   EKS_REGION: us-east-2
 
 jobs:
@@ -17,6 +17,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      
+    - name: Kubectl
+      uses: azure/setup-kubectl@v2.0
+      with:
+          version: 'v1.23.6'
+      id: install  
 
    # AWS Credentials
     - uses: aws-actions/configure-aws-credentials@v1
@@ -26,22 +32,22 @@ jobs:
         aws-region: ${{ env.EKS_REGION }}
         
    
-   # Install nctl
-    - name: Set up nctl
-      run: |-
-       curl -LO https://nirmata-downloads.s3.us-east-2.amazonaws.com/nctl/nctl_3.2.3/nctl_3.2.3_linux_64-bit.zip
-       unzip nctl_3.2.3_linux_64-bit.zip
-       chmod 755 nctl
-       mv nctl /usr/local/bin/
-       #echo $PATH        
+#    # Install nctl
+#     - name: Set up nctl
+#       run: |-
+#        curl -LO https://nirmata-downloads.s3.us-east-2.amazonaws.com/nctl/nctl_3.2.3/nctl_3.2.3_linux_64-bit.zip
+#        unzip nctl_3.2.3_linux_64-bit.zip
+#        chmod 755 nctl
+#        mv nctl /usr/local/bin/
+#        #echo $PATH        
 
     # Get the EKS credentials so we can deploy to the cluster
     - run: |-
-        aws eks list-clusters
+        #aws eks list-clusters
         aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
-        nctl kubeconfig update --token ${{ secrets.NIRMATA_TOKEN }}
-        kubectl config get-contexts
-        kubectl config use-context newnirmata
+#         nctl kubeconfig update --token ${{ secrets.NIRMATA_TOKEN }}
+#         kubectl config get-contexts
+#         kubectl config use-context newnirmata
         
               
     # Login to Jfrog
@@ -80,6 +86,12 @@ jobs:
      steps:
      - name: Checkout
        uses: actions/checkout@v2
+       
+     - name: Kubectl
+       uses: azure/setup-kubectl@v2.0
+       with:
+          version: 'v1.23.6'
+       id: install    
       
       
      # AWS Credentials
@@ -89,26 +101,27 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.EKS_REGION }}
         
-   # Install nctl
-     - name: Set up nctl
-       run: |-
-        curl -LO https://nirmata-downloads.s3.us-east-2.amazonaws.com/nctl/nctl_3.2.3/nctl_3.2.3_linux_64-bit.zip
-        unzip nctl_3.2.3_linux_64-bit.zip
-        chmod 755 nctl
-        mv nctl /usr/local/bin/
-        #echo $PATH        
-    # Get the EKS credentials so we can deploy to the cluster
-     - run: |-
-        aws eks list-clusters
-        aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
-        nctl kubeconfig update --token ${{ secrets.NIRMATA_TOKEN }}
-        kubectl config get-contexts
-        kubectl config use-context newnirmata
-             
+#    # Install nctl
+#      - name: Set up nctl
+#        run: |-
+#         curl -LO https://nirmata-downloads.s3.us-east-2.amazonaws.com/nctl/nctl_3.2.3/nctl_3.2.3_linux_64-bit.zip
+#         unzip nctl_3.2.3_linux_64-bit.zip
+#         chmod 755 nctl
+#         mv nctl /usr/local/bin/
+#         #echo $PATH   
 
 #     # Get the EKS credentials so we can deploy to the cluster
 #      - run: |-
+#         aws eks list-clusters
 #         aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
+#         nctl kubeconfig update --token ${{ secrets.NIRMATA_TOKEN }}
+#         kubectl config get-contexts
+#         kubectl config use-context newnirmata
+             
+
+    # Get the EKS credentials so we can deploy to the cluster
+     - run: |-
+        aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
       
      - name: Update CloudFlare DNS with Cluster IP 
        run: |-
