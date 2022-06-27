@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/campaign-requirements",
+      "handler": "campaign-requirement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/campaign-requirements/count",
+      "handler": "campaign-requirement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/campaign-requirements/:id",
+      "handler": "campaign-requirement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/campaign-requirements",
+      "handler": "campaign-requirement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/campaign-requirement/soft_delete",
+      "handler": "campaign-requirement.soft_delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/campaign-requirements/:id",
+      "handler": "campaign-requirement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/campaign-requirements/:id",
+      "handler": "campaign-requirement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

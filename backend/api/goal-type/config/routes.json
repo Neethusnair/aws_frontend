@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/goal-types",
+      "handler": "goal-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/goal-types/count",
+      "handler": "goal-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/goal-types/:id",
+      "handler": "goal-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/goal-types",
+      "handler": "goal-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/goal-type/get_goalType_ID",
+      "handler": "goal-type.get_goalType_ID",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/goal-type/product_quantity",
+      "handler": "goal-type.product_quantity",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/goal-types/:id",
+      "handler": "goal-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/goal-types/:id",
+      "handler": "goal-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

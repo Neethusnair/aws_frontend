@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_tags",
+  "info": {
+    "name": "Search-tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

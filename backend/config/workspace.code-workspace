@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../managedorg-jp-client"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "managedorg-jp-client"
+	}
+}

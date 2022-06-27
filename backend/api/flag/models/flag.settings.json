@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flags",
+  "info": {
+    "name": "Flag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "flagName": {
+      "type": "string"
+    },
+    "flagType": {
+      "type": "string"
+    }
+  }
+}

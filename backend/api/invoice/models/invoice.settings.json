@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "name": "invoice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "float",
+      "default": 0
+    },
+    "description": {
+      "type": "string"
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "isPaid": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "receipt": {
+      "via": "invoice",
+      "model": "receipt"
+    },
+    "incrementSeq": {
+      "type": "integer"
+    },
+    "invoiceNo": {
+      "type": "string"
+    },
+    "family": {
+      "model": "family",
+      "via": "invoices"
+    },
+    "package": {
+      "model": "packages",
+      "via": "invoices"
+    }
+  }
+}

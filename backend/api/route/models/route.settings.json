@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routes",
+  "info": {
+    "name": "route",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "modules": {
+      "collection": "module",
+      "via": "route"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "SINGLE",
+        "ONE_BRANCH_HEAD",
+        "ONE_BRANCH_ITEM",
+        "MULTI_BRANCH_HEAD",
+        "MULTI_BRANCH_ITEM",
+        "MULTI_SUBBRANCH_HEAD",
+        "MULTI_SUBBRANCH_ITEM",
+        "BUTTON",
+        "LINK"
+      ],
+      "default": "SINGLE"
+    },
+    "parent": {
+      "model": "route",
+      "via": "routes"
+    },
+    "routes": {
+      "collection": "route",
+      "via": "parent"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

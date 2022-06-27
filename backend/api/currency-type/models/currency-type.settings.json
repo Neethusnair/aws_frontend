@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "currency_types",
+  "info": {
+    "name": "CurrencyType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Abbreviation": {
+      "type": "string"
+    },
+    "Symbol": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "campaign_requirements": {
+      "collection": "campaign-requirement",
+      "via": "currency_type"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidate_profiles",
+  "info": {
+    "name": "candidate-profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profileName": {
+      "type": "string"
+    },
+    "educations": {
+      "via": "candidate_profile",
+      "collection": "education"
+    },
+    "experiences": {
+      "collection": "experience",
+      "via": "candidate_profile"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "candidate": {
+      "via": "candidate_profiles",
+      "model": "candidates"
+    },
+    "name": {
+      "model": "names"
+    },
+    "email": {
+      "model": "email"
+    },
+    "phone": {
+      "model": "phone"
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": true
+    },
+    "sourcingDetails": {
+      "collection": "sourcing-details",
+      "via": "candidate_profile"
+    },
+    "candidatePhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "skills": {
+      "via": "candidate_profile",
+      "collection": "skill"
+    },
+    "certificates": {
+      "via": "candidateProfile",
+      "collection": "certificate"
+    }
+  }
+}

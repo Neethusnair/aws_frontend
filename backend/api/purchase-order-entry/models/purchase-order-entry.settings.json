@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchase_order_entries",
+  "info": {
+    "name": "purchaseOrderEntry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "model": "client-onboarding"
+    },
+    "sourcingDetail": {
+      "model": "sourcing-details"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "duration": {
+      "type": "datetime"
+    },
+    "payRate": {
+      "type": "decimal"
+    },
+    "paymentTerm": {
+      "type": "string"
+    },
+    "overtimeRate": {
+      "type": "decimal"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "contractUpload": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "callbacks",
+  "info": {
+    "name": "callback"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ONBOARDING"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PROCESSING",
+        "SUCCESS",
+        "FAILED"
+      ],
+      "default": "PROCESSING"
+    },
+    "isCompleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "customer": {
+      "model": "customer"
+    }
+  }
+}

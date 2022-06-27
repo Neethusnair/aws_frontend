@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "role_types",
+  "info": {
+    "name": "roleType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roleType": {
+      "type": "string"
+    },
+    "roleDescription": {
+      "type": "string"
+    },
+    "users_permissions_users": {
+      "via": "role_types",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

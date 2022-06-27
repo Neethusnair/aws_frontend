@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_levels",
+  "info": {
+    "name": "Skill Level"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "skillLevel": {
+      "type": "enumeration",
+      "enum": [
+        "NO_EXPERIENCE",
+        "JUST_STARTED",
+        "NOVICE",
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED",
+        "EXPERT"
+      ]
+    },
+    "preferences": {
+      "via": "skillLevels",
+      "collection": "preference"
+    }
+  }
+}

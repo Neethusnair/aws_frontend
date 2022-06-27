@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "taxId": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "model": "address",
+      "via": "customer"
+    },
+    "corporation_type": {
+      "model": "corporation-type",
+      "via": "customer"
+    },
+    "number": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "deploymentData": {
+      "model": "deployment-data"
+    },
+    "owner_contact": {
+      "model": "contact"
+    },
+    "technical_contact": {
+      "model": "contact"
+    },
+    "billing_contact": {
+      "model": "contact"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "modules": {
+      "collection": "module",
+      "via": "customers",
+      "dominant": true
+    }
+  }
+}

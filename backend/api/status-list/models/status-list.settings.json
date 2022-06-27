@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "status_lists",
+  "info": {
+    "name": "statusList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "status_type": {
+      "model": "status-type",
+      "via": "status_lists"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "statuses": {
+      "via": "status",
+      "collection": "status"
+    }
+  }
+}

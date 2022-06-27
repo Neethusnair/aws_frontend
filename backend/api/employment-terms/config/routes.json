@@ -1,0 +1,59 @@
+{
+    "routes": [{
+            "method": "GET",
+            "path": "/employment-terms",
+            "handler": "employment-terms.find",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/employment-terms/count",
+            "handler": "employment-terms.count",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/employment-terms/:id",
+            "handler": "employment-terms.findOne",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/employment-terms",
+            "handler": "employment-terms.create",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/employment-terms/delete_requirement",
+            "handler": "employment-terms.delete_requirement",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "PUT",
+            "path": "/employment-terms/:id",
+            "handler": "employment-terms.update",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/employment-terms/:id",
+            "handler": "employment-terms.delete",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
+}

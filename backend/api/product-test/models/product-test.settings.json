@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_tests",
+  "info": {
+    "name": "ProductTest"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AmazonSKU": {
+      "type": "string"
+    },
+    "CharitySKU": {
+      "type": "string"
+    }
+  }
+}

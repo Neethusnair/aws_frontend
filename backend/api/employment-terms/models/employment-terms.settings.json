@@ -1,0 +1,145 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requirements",
+  "info": {
+    "name": "Requirement",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "client": {
+      "model": "third-party"
+    },
+    "vendor": {
+      "model": "third-party"
+    },
+    "endClient": {
+      "model": "third-party"
+    },
+    "skillLevel": {
+      "type": "enumeration",
+      "enum": [
+        "NO_EXPERIENCE",
+        "JUST_STARTED",
+        "NOVICE",
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED",
+        "EXPERT"
+      ],
+      "default": "NO_EXPERIENCE"
+    },
+    "certificates": {
+      "collection": "certificate"
+    },
+    "address": {
+      "via": "requirement",
+      "model": "address"
+    },
+    "fullRemote": {
+      "type": "boolean",
+      "default": true
+    },
+    "partialRemote": {
+      "type": "boolean",
+      "default": true
+    },
+    "travel": {
+      "type": "boolean",
+      "default": true
+    },
+    "employmentType": {
+      "model": "employment-type"
+    },
+    "visaType": {
+      "type": "enumeration",
+      "enum": [
+        "ANY",
+        "USC",
+        "GC",
+        "H1B"
+      ]
+    },
+    "payRate": {
+      "type": "string",
+      "default": "0"
+    },
+    "billRate": {
+      "type": "string"
+    },
+    "searchTags": {
+      "collection": "search-tag"
+    },
+    "industries": {
+      "collection": "industry",
+      "via": "requirements",
+      "dominant": true
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "accountsManager": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "feeType": {
+      "type": "enumeration",
+      "enum": [
+        "PERCENTAGE",
+        "FIXED_FEE",
+        "PERCENTAGE_SPLIT",
+        "FIXED_FEE_SPLIT",
+        "BID"
+      ]
+    },
+    "fee": {
+      "type": "string",
+      "default": "0"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "INCOMPLETE",
+        "ACTIVE",
+        "CLOSED",
+        "DELETED"
+      ],
+      "default": "INCOMPLETE"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "customQuestions": {
+      "collection": "custom-question",
+      "via": "requirement"
+    },
+    "vacancy": {
+      "default": 1,
+      "type": "integer"
+    },
+    "recruitmentManager": {
+      "via": "requirement",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "sourcingDetails": {
+      "collection": "sourcing-details",
+      "via": "requirement"
+    }
+  }
+}

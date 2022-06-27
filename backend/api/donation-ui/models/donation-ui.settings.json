@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donation_uis",
+  "info": {
+    "name": "DonationUI"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fgColor": {
+      "type": "string"
+    },
+    "templateName": {
+      "type": "string"
+    },
+    "websiteURL": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "codeLocation": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

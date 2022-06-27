@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "priorities",
+  "info": {
+    "name": "Priority",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "priorityID": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "priorityLevel": {
+      "type": "enumeration",
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    }
+  }
+}

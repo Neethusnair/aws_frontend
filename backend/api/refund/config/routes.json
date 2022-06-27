@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/refunds",
+      "handler": "refund.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/refunds/count",
+      "handler": "refund.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/refunds/:id",
+      "handler": "refund.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/refunds",
+      "handler": "refund.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/refunds/:id",
+      "handler": "refund.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/refunds/:id",
+      "handler": "refund.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

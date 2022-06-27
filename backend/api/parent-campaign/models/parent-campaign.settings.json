@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parent_campaigns",
+  "info": {
+    "name": "Parent Campaign",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "campaigns": {
+      "via": "parentCampaigns",
+      "collection": "campaign",
+      "dominant": true
+    }
+  }
+}

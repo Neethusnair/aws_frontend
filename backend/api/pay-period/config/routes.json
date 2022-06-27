@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pay-periods",
+      "handler": "pay-period.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pay-periods/count",
+      "handler": "pay-period.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pay-periods/:id",
+      "handler": "pay-period.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pay-periods",
+      "handler": "pay-period.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pay-periods/:id",
+      "handler": "pay-period.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pay-periods/:id",
+      "handler": "pay-period.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

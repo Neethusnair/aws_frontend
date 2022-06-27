@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_brandings",
+  "info": {
+    "name": "companyBranding",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "footer": {
+      "type": "string"
+    },
+    "footerDetails": {
+      "type": "string"
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "privacyPolicy": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "donation_ui": {
+      "model": "donation-ui"
+    }
+  }
+}

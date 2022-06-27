@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "Office"
+      ]
+    },
+    "houseNo": {
+      "type": "string"
+    },
+    "unitNo": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "requirement": {
+      "via": "address",
+      "model": "employment-terms"
+    },
+    "country": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "customer": {
+      "via": "address",
+      "model": "customer"
+    }
+  }
+}

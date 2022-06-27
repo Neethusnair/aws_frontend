@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart_items",
+  "info": {
+    "name": "CartItem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "campaignRequirement": {
+      "model": "campaign-requirement"
+    },
+    "cart": {
+      "via": "cart_items",
+      "model": "cart"
+    },
+    "productRate": {
+      "type": "decimal"
+    },
+    "productAmount": {
+      "type": "decimal"
+    }
+  }
+}

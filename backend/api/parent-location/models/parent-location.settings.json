@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parent_locations",
+  "info": {
+    "name": "ParentLocation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "parentLocationName": {
+      "type": "string"
+    },
+    "parentLocationType": {
+      "type": "string"
+    },
+    "locations": {
+      "collection": "location"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "parentLocations": {
+      "via": "parentLocation",
+      "collection": "location"
+    }
+  }
+}

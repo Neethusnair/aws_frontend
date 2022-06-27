@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paymentgateways",
+  "info": {
+    "name": "Paymentgateway",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "apiKey": {
+      "type": "string"
+    },
+    "successUrl": {
+      "type": "string"
+    },
+    "cancelUrl": {
+      "type": "string"
+    },
+    "isConfigured": {
+      "type": "boolean",
+      "default": false
+    },
+    "publicKey": {
+      "type": "string"
+    },
+    "privateKey": {
+      "type": "password"
+    },
+    "gateway": {
+      "type": "enumeration",
+      "enum": [
+        "PAYPAL",
+        "BRAINTREE",
+        "STRIPE"
+      ]
+    }
+  }
+}

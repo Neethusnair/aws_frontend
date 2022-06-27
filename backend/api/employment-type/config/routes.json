@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/employment-types",
+      "handler": "employment-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/employment-types/count",
+      "handler": "employment-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/employment-types/:id",
+      "handler": "employment-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/employment-types",
+      "handler": "employment-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/employment-types/:id",
+      "handler": "employment-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/employment-types/:id",
+      "handler": "employment-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

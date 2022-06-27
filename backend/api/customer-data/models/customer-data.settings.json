@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "customer_data",
+  "info": {
+    "name": "customerData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customerId": {
+      "type": "string"
+    },
+    "adminApi": {
+      "type": "string",
+      "default": "https://admin-api.managedorg,io"
+    }
+  }
+}

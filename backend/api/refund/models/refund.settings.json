@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "refunds",
+  "info": {
+    "name": "Refund",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order": {
+      "model": "order"
+    },
+    "product": {
+      "model": "product"
+    },
+    "refundAmount": {
+      "type": "decimal"
+    },
+    "payment": {
+      "model": "payment"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

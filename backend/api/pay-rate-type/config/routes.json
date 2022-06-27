@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pay-rate-types",
+      "handler": "pay-rate-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pay-rate-types/count",
+      "handler": "pay-rate-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pay-rate-types/:id",
+      "handler": "pay-rate-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pay-rate-types",
+      "handler": "pay-rate-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pay-rate-types/:id",
+      "handler": "pay-rate-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pay-rate-types/:id",
+      "handler": "pay-rate-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

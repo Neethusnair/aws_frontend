@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/joining-availabilities",
+      "handler": "joining-availability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/joining-availabilities/count",
+      "handler": "joining-availability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/joining-availabilities/:id",
+      "handler": "joining-availability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/joining-availabilities",
+      "handler": "joining-availability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/joining-availabilities/:id",
+      "handler": "joining-availability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/joining-availabilities/:id",
+      "handler": "joining-availability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

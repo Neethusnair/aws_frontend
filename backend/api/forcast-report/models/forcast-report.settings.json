@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forcast_reports",
+  "info": {
+    "name": "ForcastReport"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reportName": {
+      "type": "string"
+    },
+    "reportFields": {
+      "type": "string"
+    },
+    "reportFieldOrder": {
+      "type": "string"
+    },
+    "forecast_report_type": {
+      "model": "forecast-report-type"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

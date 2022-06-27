@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employment_types",
+  "info": {
+    "name": "Employment_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "preferences": {
+      "via": "employmentTypes",
+      "collection": "preference"
+    }
+  }
+}

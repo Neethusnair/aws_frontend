@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidates",
+  "info": {
+    "name": "Candidate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "candidate_profiles": {
+      "via": "candidate",
+      "collection": "candidate-profile"
+    },
+    "user": {
+      "via": "candidate",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "createdBy": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

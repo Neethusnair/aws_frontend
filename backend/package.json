@@ -1,0 +1,45 @@
+{
+  "name": "managedorg-jp-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/provider-email-nodemailer": "4.1.12",
+    "aws4": "^1.11.0",
+    "braintree": "^3.7.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "isomorphic-fetch": "^3.0.0",
+    "strapi": "3.6.10",
+    "strapi-admin": "3.6.10",
+    "strapi-connector-mongoose": "3.6.10",
+    "strapi-plugin-content-manager": "3.6.10",
+    "strapi-plugin-content-type-builder": "3.6.10",
+    "strapi-plugin-email": "3.6.10",
+    "strapi-plugin-entity-relationship-chart": "^3.1.0",
+    "strapi-plugin-graphql": "3.6.10",
+    "strapi-plugin-i18n": "3.6.10",
+    "strapi-plugin-upload": "3.6.10",
+    "strapi-plugin-users-permissions": "3.6.10",
+    "strapi-provider-email-nodemailer": "^3.6.10",
+    "strapi-utils": "3.6.10",
+    "stripe": "^8.217.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "64f0ca8f-27d3-4e02-b211-2835dd0dbd32"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

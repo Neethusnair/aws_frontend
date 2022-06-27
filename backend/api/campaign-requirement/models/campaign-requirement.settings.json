@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaign_requirements",
+  "info": {
+    "name": "campaignRequirement",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "via": "campaign_requirements",
+      "model": "product"
+    },
+    "campaign": {
+      "via": "campaign_requirements",
+      "model": "campaign"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "currency_type": {
+      "via": "campaign_requirements",
+      "model": "currency-type"
+    }
+  }
+}

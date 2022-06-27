@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pay_periods",
+  "info": {
+    "name": "Pay-period",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

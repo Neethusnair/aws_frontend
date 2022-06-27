@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preferences",
+  "info": {
+    "name": "Preference",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "candidateProfile": {
+      "model": "candidate-profile"
+    },
+    "industries": {
+      "collection": "industry",
+      "via": "preferences",
+      "dominant": true
+    },
+    "employmentTypes": {
+      "collection": "employment-type",
+      "via": "preferences",
+      "dominant": true
+    },
+    "remote": {
+      "type": "boolean"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "payRate": {
+      "type": "string"
+    },
+    "titles": {
+      "collection": "title",
+      "via": "preferences",
+      "dominant": true
+    },
+    "preferenceName": {
+      "type": "string"
+    },
+    "experiences": {
+      "collection": "experience",
+      "via": "preferences",
+      "dominant": true
+    },
+    "skillLevels": {
+      "collection": "skill-level",
+      "via": "preferences",
+      "dominant": true
+    }
+  }
+}

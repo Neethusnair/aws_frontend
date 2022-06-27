@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_types",
+  "info": {
+    "name": "eventType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

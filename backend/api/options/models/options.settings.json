@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "options",
+  "info": {
+    "name": "Options",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "optionName": {
+      "type": "string"
+    },
+    "optionType": {
+      "type": "string"
+    },
+    "optionDetails": {
+      "type": "string"
+    },
+    "optionPrice": {
+      "type": "decimal"
+    },
+    "optionMandatory": {
+      "type": "boolean"
+    },
+    "optionMultiple": {
+      "type": "string"
+    },
+    "optionLocation": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

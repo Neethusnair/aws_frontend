@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/forecast-report-types",
+      "handler": "forecast-report-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/forecast-report-types/count",
+      "handler": "forecast-report-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/forecast-report-types/:id",
+      "handler": "forecast-report-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/forecast-report-types",
+      "handler": "forecast-report-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/forecast-report-types/:id",
+      "handler": "forecast-report-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/forecast-report-types/:id",
+      "handler": "forecast-report-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

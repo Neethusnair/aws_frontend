@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_questions",
+  "info": {
+    "name": "customQuestion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "responseType": {
+      "type": "enumeration",
+      "enum": [
+        "YES_NO",
+        "NUMERIC",
+        "TEXT"
+      ],
+      "default": "YES_NO"
+    },
+    "idealAnswer": {
+      "type": "string"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "requirement": {
+      "via": "customQuestions",
+      "model": "employment-terms"
+    }
+  }
+}

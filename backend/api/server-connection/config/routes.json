@@ -1,0 +1,156 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/server-connections",
+      "handler": "server-connection.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/server-connections/count",
+      "handler": "server-connection.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/server-connections/:id",
+      "handler": "server-connection.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/establish_initial_connection",
+      "handler": "server-connection.establish_initial_connection",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/check_personal_data_expiry",
+      "handler": "server-connection.check_personal_data_expiry",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/access_url",
+      "handler": "server-connection.access_url",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/personal_data_expired",
+      "handler": "server-connection.personal_data_expired",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/amend_server_data",
+      "handler": "server-connection.amend_server_data",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/server-connection/fetch_code",
+      "handler": "server-connection.fetch_code",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/get_tokens",
+      "handler": "server-connection.get_tokens",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/sign_request",
+      "handler": "server-connection.sign_request",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/get_server_data",
+      "handler": "server-connection.get_server_data",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/encrypt_data",
+      "handler": "server-connection.encrypt_data",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/decrypt_data",
+      "handler": "server-connection.decrypt_data",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/create_order",
+      "handler": "server-connection.create_order",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connection/create_new_org",
+      "handler": "server-connection.create_new_org",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/server-connections",
+      "handler": "server-connection.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/server-connections/:id",
+      "handler": "server-connection.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/server-connections/:id",
+      "handler": "server-connection.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

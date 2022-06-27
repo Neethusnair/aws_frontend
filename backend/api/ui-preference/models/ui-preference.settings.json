@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ui_preferences",
+  "info": {
+    "name": "UIPreference"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "field": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

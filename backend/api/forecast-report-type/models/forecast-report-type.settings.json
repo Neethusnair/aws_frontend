@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forecast_report_types",
+  "info": {
+    "name": "ForecastReportType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reportType": {
+      "type": "string"
+    },
+    "reportDescription": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

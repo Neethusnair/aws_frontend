@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goal_types",
+  "info": {
+    "name": "Goal Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "IsActive": {
+      "type": "boolean"
+    },
+    "campaigns": {
+      "via": "goalTypes",
+      "collection": "campaign"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/donation-uis",
+      "handler": "donation-ui.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/donation-uis/count",
+      "handler": "donation-ui.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/donation-uis/:id",
+      "handler": "donation-ui.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/donation-ui/set_donation_driver_details",
+      "handler": "donation-ui.set_donation_driver_details",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/donation-ui/get_donation_driver_UI_details",
+      "handler": "donation-ui.get_donation_driver_UI_details",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/donation-uis",
+      "handler": "donation-ui.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/donation-uis/:id",
+      "handler": "donation-ui.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/donation-uis/:id",
+      "handler": "donation-ui.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

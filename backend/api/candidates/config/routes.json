@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/candidates",
+      "handler": "candidates.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidates/count",
+      "handler": "candidates.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidates/:id",
+      "handler": "candidates.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidates/add_candidate",
+      "handler": "candidates.add_candidate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidates/search_candidate",
+      "handler": "candidates.search_candidate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidates",
+      "handler": "candidates.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidates/delete_candidate",
+      "handler": "candidates.delete_candidate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/candidates/:id",
+      "handler": "candidates.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/candidates/:id",
+      "handler": "candidates.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

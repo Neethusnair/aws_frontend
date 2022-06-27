@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_onboardings",
+  "info": {
+    "name": "Client",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "clientName": {
+      "type": "string"
+    },
+    "clientAddress": {
+      "model": "address"
+    },
+    "clientPhone": {
+      "collection": "phone"
+    },
+    "clientEmail": {
+      "collection": "email"
+    },
+    "clientContactPerson": {
+      "type": "string"
+    },
+    "contactTitle": {
+      "type": "string"
+    },
+    "contactPhone": {
+      "model": "phone"
+    },
+    "contactEmail": {
+      "model": "email"
+    },
+    "logoUpload": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

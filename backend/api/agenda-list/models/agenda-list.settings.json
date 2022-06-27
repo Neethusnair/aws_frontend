@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agenda_lists",
+  "info": {
+    "name": "AgendaList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "agendaName": {
+      "type": "string"
+    },
+    "agendaItemName": {
+      "type": "string"
+    },
+    "agendaItemDescription": {
+      "type": "string"
+    },
+    "agendaItemPriority": {
+      "model": "priority"
+    },
+    "agendaItemAllocatedTime": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packages",
+  "info": {
+    "name": "packages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "isOnline": {
+      "type": "boolean",
+      "default": true
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "packageUrl": {
+      "type": "string"
+    },
+    "invoices": {
+      "via": "package",
+      "collection": "invoice"
+    }
+  }
+}

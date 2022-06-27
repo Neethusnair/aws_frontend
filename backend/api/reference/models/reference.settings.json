@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "references",
+  "info": {
+    "name": "Reference",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "email": {
+      "model": "email"
+    },
+    "phone": {
+      "model": "phone"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "organization": {
+      "model": "organization"
+    }
+  }
+}

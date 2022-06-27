@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "server_connections",
+  "info": {
+    "name": "server_connection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Code": {
+      "type": "string"
+    },
+    "Client_id": {
+      "type": "string"
+    },
+    "Client_secret": {
+      "type": "string"
+    },
+    "redirect_uri": {
+      "type": "string"
+    },
+    "refresh_token": {
+      "type": "string"
+    },
+    "awsSecretKey": {
+      "type": "string"
+    },
+    "awsAccessKey": {
+      "type": "string"
+    },
+    "punchoutUrl": {
+      "type": "string"
+    },
+    "Identity": {
+      "type": "string"
+    },
+    "sharedSecret": {
+      "type": "string"
+    },
+    "organization": {
+      "model": "organization"
+    },
+    "email": {
+      "model": "email"
+    },
+    "access_token": {
+      "type": "string"
+    },
+    "admin_email": {
+      "type": "string"
+    },
+    "deploymentMode": {
+      "type": "boolean"
+    },
+    "databaseUrl": {
+      "type": "string"
+    },
+    "accessRenewal": {
+      "type": "datetime"
+    }
+  }
+}

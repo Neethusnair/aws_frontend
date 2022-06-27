@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules",
+  "info": {
+    "name": "module",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "route": {
+      "via": "modules",
+      "model": "route"
+    },
+    "customers": {
+      "via": "modules",
+      "collection": "customer"
+    }
+  }
+}

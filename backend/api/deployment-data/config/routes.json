@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/deployment-data",
+      "handler": "deployment-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deployment-data/count",
+      "handler": "deployment-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deployment-data/:id",
+      "handler": "deployment-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/deployment-data",
+      "handler": "deployment-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/deployment-data/domainAvailable",
+      "handler": "deployment-data.domainAvailable",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/deployment-data/:id",
+      "handler": "deployment-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/deployment-data/:id",
+      "handler": "deployment-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

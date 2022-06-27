@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/skill-levels",
+      "handler": "skill-level.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skill-levels/count",
+      "handler": "skill-level.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skill-levels/:id",
+      "handler": "skill-level.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/skill-levels",
+      "handler": "skill-level.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/skill-levels/:id",
+      "handler": "skill-level.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/skill-levels/:id",
+      "handler": "skill-level.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

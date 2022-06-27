@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/certificate-types",
+      "handler": "certificate-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-types/count",
+      "handler": "certificate-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-types/:id",
+      "handler": "certificate-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/certificate-types",
+      "handler": "certificate-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/certificate-types/:id",
+      "handler": "certificate-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/certificate-types/:id",
+      "handler": "certificate-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

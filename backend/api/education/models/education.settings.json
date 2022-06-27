@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "name": "education",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "degree": {
+      "model": "degree"
+    },
+    "school": {
+      "model": "school"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "major": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "candidate_profile": {
+      "via": "educations",
+      "model": "candidate-profile"
+    },
+    "grade": {
+      "type": "string"
+    }
+  }
+}

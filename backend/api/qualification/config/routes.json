@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/qualifications",
+      "handler": "qualification.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/qualifications/count",
+      "handler": "qualification.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/qualifications/:id",
+      "handler": "qualification.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/qualifications",
+      "handler": "qualification.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/qualifications/:id",
+      "handler": "qualification.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/qualifications/:id",
+      "handler": "qualification.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

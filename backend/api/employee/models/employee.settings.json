@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "email": {
+      "model": "email"
+    },
+    "employeeAddress": {
+      "model": "address"
+    },
+    "phoneNumber": {
+      "model": "phone"
+    }
+  }
+}

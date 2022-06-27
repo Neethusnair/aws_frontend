@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fee-types",
+      "handler": "fee-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fee-types/count",
+      "handler": "fee-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fee-types/:id",
+      "handler": "fee-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fee-types",
+      "handler": "fee-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fee-types/:id",
+      "handler": "fee-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fee-types/:id",
+      "handler": "fee-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

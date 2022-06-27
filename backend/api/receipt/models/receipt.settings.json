@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "receipts",
+  "info": {
+    "name": "receipt",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "invoice": {
+      "via": "receipt",
+      "model": "invoice"
+    },
+    "date": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "float"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "SUCCESS",
+        "PROCESSING",
+        "FAILED"
+      ],
+      "default": "PROCESSING"
+    },
+    "transactionId": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "model": "order"
+    },
+    "donor": {
+      "model": "donor"
+    }
+  }
+}

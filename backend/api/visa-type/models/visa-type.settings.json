@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visa_types",
+  "info": {
+    "name": "visaType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

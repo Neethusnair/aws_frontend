@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/degrees",
+      "handler": "degree.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/degrees/count",
+      "handler": "degree.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/degrees/:id",
+      "handler": "degree.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/degrees",
+      "handler": "degree.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/degrees/:id",
+      "handler": "degree.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/degrees/:id",
+      "handler": "degree.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

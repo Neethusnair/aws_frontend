@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sourcing-details",
+      "handler": "sourcing-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sourcing-details/count",
+      "handler": "sourcing-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sourcing-details/:id",
+      "handler": "sourcing-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sourcing-details",
+      "handler": "sourcing-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sourcing-details/add_candidate",
+      "handler": "sourcing-details.add_candidate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sourcing-details/update_candidate",
+      "handler": "sourcing-details.update_candidate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sourcing-details/:id",
+      "handler": "sourcing-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sourcing-details/:id",
+      "handler": "sourcing-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

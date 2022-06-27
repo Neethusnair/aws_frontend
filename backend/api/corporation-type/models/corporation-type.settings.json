@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporation_types",
+  "info": {
+    "name": "corporationType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "customer": {
+      "via": "corporation_type",
+      "model": "customer"
+    }
+  }
+}

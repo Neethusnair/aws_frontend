@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "role_classes",
+  "info": {
+    "name": "roleClass"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roleType": {
+      "type": "string"
+    },
+    "roleDescription": {
+      "type": "string"
+    }
+  }
+}

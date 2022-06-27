@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificate_authorities",
+  "info": {
+    "name": "certificate-authority"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

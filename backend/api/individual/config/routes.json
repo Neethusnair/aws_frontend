@@ -1,0 +1,140 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/individuals",
+      "handler": "individual.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/individuals/count",
+      "handler": "individual.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/individuals/:id",
+      "handler": "individual.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/delete_member",
+      "handler": "individual.delete_member",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/add_member",
+      "handler": "individual.add_member",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/add_individual",
+      "handler": "individual.add_individual",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/check_if_exist",
+      "handler": "individual.check_if_exist",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/createHeadMember",
+      "handler": "individual.createHeadMember",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/createMember",
+      "handler": "individual.createMember",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/createFamily",
+      "handler": "individual.createFamily",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/gen_login_otp",
+      "handler": "individual.gen_login_otp",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/validate_login_otp",
+      "handler": "individual.validate_login_otp",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals/update_member",
+      "handler": "individual.update_member",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individuals",
+      "handler": "individual.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/individual/userSoftDelete",
+      "handler": "individual.userSoftDelete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/individuals/:id",
+      "handler": "individual.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/individuals/:id",
+      "handler": "individual.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

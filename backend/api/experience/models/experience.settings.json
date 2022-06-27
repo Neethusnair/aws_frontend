@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "name": "experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string"
+    },
+    "responsibility": {
+      "type": "richtext"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "candidate_profile": {
+      "via": "experiences",
+      "model": "candidate-profile"
+    },
+    "preferences": {
+      "via": "experiences",
+      "collection": "preference"
+    }
+  }
+}

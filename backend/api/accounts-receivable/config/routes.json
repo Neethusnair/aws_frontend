@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/accounts-receivables",
+      "handler": "accounts-receivable.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts-receivables/count",
+      "handler": "accounts-receivable.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts-receivables/:id",
+      "handler": "accounts-receivable.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accounts-receivables",
+      "handler": "accounts-receivable.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/accounts-receivables/:id",
+      "handler": "accounts-receivable.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/accounts-receivables/:id",
+      "handler": "accounts-receivable.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

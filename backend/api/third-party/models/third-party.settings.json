@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "third_parties",
+  "info": {
+    "name": "Third-party"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "model": "address"
+    },
+    "email": {
+      "model": "email"
+    },
+    "phones": {
+      "collection": "phone",
+      "via": "third_party"
+    },
+    "partyType": {
+      "type": "enumeration",
+      "enum": [
+        "VENDOR",
+        "RECRUITER",
+        "CLIENT",
+        "END_CLIENT"
+      ],
+      "default": "VENDOR"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

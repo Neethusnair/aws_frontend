@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/currency-types",
+      "handler": "currency-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/currency-types/count",
+      "handler": "currency-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/currency-types/:id",
+      "handler": "currency-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/currency-types",
+      "handler": "currency-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/currency-types/:id",
+      "handler": "currency-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/currency-types/:id",
+      "handler": "currency-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

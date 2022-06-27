@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deployment_data",
+  "info": {
+    "name": "deploymentData"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namePrefix": {
+      "type": "string"
+    },
+    "containerPortVal": {
+      "type": "string"
+    },
+    "portVal": {
+      "type": "string"
+    },
+    "domainName": {
+      "type": "string"
+    },
+    "serviceName": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "hostingType": {
+      "type": "enumeration",
+      "enum": [
+        "DEDICATED",
+        "SHARED"
+      ]
+    }
+  }
+}

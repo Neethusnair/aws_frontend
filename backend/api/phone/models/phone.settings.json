@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phones",
+  "info": {
+    "name": "phone",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "phone_type": {
+      "model": "phone-type"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "third_party": {
+      "via": "phones",
+      "model": "third-party"
+    },
+    "user": {
+      "via": "addonPhone",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

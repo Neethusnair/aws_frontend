@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "name": "Cart",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "collection": "product"
+    },
+    "quantity": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "cart_items": {
+      "via": "cart",
+      "collection": "cart-item"
+    },
+    "donor": {
+      "model": "donor"
+    },
+    "campaign": {
+      "model": "campaign"
+    },
+    "taxAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "shippingCharge": {
+      "type": "decimal",
+      "default": 0
+    },
+    "handlingCharge": {
+      "type": "decimal",
+      "default": 0
+    },
+    "discount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "totalProductAmount": {
+      "type": "decimal"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    },
+    "cartStage": {
+      "type": "enumeration",
+      "enum": [
+        "Initial",
+        "Payment",
+        "Cancelled",
+        "Completed"
+      ],
+      "default": "Initial"
+    }
+  }
+}

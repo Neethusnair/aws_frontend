@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emails",
+  "info": {
+    "name": "email",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "email_type": {
+      "model": "email-type"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "user": {
+      "via": "addonEmail",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

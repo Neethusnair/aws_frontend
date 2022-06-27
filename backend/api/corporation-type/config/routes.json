@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/corporation-types",
+      "handler": "corporation-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/corporation-types/count",
+      "handler": "corporation-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/corporation-types/:id",
+      "handler": "corporation-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/corporation-types",
+      "handler": "corporation-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/corporation-types/:id",
+      "handler": "corporation-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/corporation-types/:id",
+      "handler": "corporation-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

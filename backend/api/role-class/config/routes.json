@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/role-classes",
+      "handler": "role-class.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/role-classes/count",
+      "handler": "role-class.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/role-classes/:id",
+      "handler": "role-class.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/role-classes",
+      "handler": "role-class.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/role-classes/:id",
+      "handler": "role-class.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/role-classes/:id",
+      "handler": "role-class.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

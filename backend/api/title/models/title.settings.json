@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "titles",
+  "info": {
+    "name": "Title"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleName": {
+      "type": "string"
+    },
+    "titleDescription": {
+      "type": "string"
+    },
+    "preferences": {
+      "via": "titles",
+      "collection": "preference"
+    }
+  }
+}

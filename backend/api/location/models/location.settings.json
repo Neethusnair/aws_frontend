@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "location_s",
+  "info": {
+    "name": "Location ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "locationName": {
+      "type": "string"
+    },
+    "locationType": {
+      "type": "string"
+    },
+    "parentLocation": {
+      "model": "parent-location",
+      "via": "parentLocations"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

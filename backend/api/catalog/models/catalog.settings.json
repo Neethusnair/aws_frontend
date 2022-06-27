@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogs",
+  "info": {
+    "name": "Catalog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "catalogID": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product"
+    },
+    "catalogDescription": {
+      "type": "string"
+    },
+    "catalogParentID": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "campaign": {
+      "model": "campaign"
+    }
+  }
+}

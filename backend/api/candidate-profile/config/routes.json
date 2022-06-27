@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/candidate-profiles",
+      "handler": "candidate-profile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidate-profiles/count",
+      "handler": "candidate-profile.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidate-profiles/:id",
+      "handler": "candidate-profile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidate-profiles",
+      "handler": "candidate-profile.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidate-profile/make_default",
+      "handler": "candidate-profile.make_default",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidate-profile/delete_profile",
+      "handler": "candidate-profile.delete_profile",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/candidate-profiles/:id",
+      "handler": "candidate-profile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/candidate-profiles/:id",
+      "handler": "candidate-profile.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

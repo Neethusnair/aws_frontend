@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "name": "organization",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "address": {
+      "model": "address"
+    },
+    "relationTaxId": {
+      "type": "string"
+    },
+    "phone": {
+      "model": "phone"
+    },
+    "internal_id": {
+      "type": "string"
+    }
+  }
+}

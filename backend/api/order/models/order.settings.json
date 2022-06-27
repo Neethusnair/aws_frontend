@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cart": {
+      "model": "cart"
+    },
+    "donor": {
+      "model": "donor"
+    },
+    "products": {
+      "collection": "product"
+    },
+    "options": {
+      "collection": "options"
+    },
+    "orderStatus": {
+      "type": "string"
+    }
+  }
+}

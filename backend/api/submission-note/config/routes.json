@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/submission-notes",
+      "handler": "submission-note.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/submission-notes/count",
+      "handler": "submission-note.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/submission-notes/:id",
+      "handler": "submission-note.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/submission-notes",
+      "handler": "submission-note.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/submission-notes/:id",
+      "handler": "submission-note.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/submission-notes/:id",
+      "handler": "submission-note.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

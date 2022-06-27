@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statuses",
+  "info": {
+    "name": "status",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "createdBy": {
+      "via": "status",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "remark": {
+      "model": "remarks",
+      "via": "status"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "sourcing_details": {
+      "via": "status",
+      "collection": "sourcing-details"
+    },
+    "status": {
+      "model": "status-list",
+      "via": "statuses"
+    }
+  }
+}

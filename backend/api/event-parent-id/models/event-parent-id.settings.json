@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_parent_ids",
+  "info": {
+    "name": "EventParentID",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eventName": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "eventImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "eventVideo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "organization": {
+      "model": "organization"
+    },
+    "event_type": {
+      "model": "event-type"
+    }
+  }
+}

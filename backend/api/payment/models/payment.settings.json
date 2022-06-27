@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "name": "Payment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customerID": {
+      "type": "string"
+    },
+    "paymentCart": {
+      "model": "cart"
+    },
+    "paymentOrder": {
+      "model": "order"
+    },
+    "subpaymentAmount": {
+      "type": "decimal"
+    },
+    "paymentMethod": {
+      "type": "string"
+    },
+    "paymentReceipt": {
+      "model": "receipt"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "paymentGatewayRelation": {
+      "type": "string"
+    },
+    "paymentStatus": {
+      "type": "string"
+    },
+    "transactionID": {
+      "type": "string"
+    }
+  }
+}

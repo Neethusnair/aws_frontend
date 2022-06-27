@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industries",
+  "info": {
+    "name": "Industry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "requirements": {
+      "via": "industries",
+      "collection": "employment-terms"
+    },
+    "preferences": {
+      "via": "industries",
+      "collection": "preference"
+    }
+  }
+}

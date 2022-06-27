@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "indents",
+  "info": {
+    "name": "Indent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Indent_Name": {
+      "type": "string"
+    },
+    "Ident_Description": {
+      "type": "string"
+    },
+    "Ident_Time": {
+      "type": "string"
+    }
+  }
+}

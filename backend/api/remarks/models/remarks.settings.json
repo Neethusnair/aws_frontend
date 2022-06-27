@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "remarks",
+  "info": {
+    "name": "remarks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "remark": {
+      "type": "string"
+    },
+    "createdBy": {
+      "via": "remark",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "status": {
+      "via": "remark",
+      "model": "status"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaigns",
+  "info": {
+    "name": "Campaign",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "campaignName": {
+      "type": "string"
+    },
+    "campaignDescription": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "organization": {
+      "model": "organization"
+    },
+    "shippingAddressId": {
+      "model": "address"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "parentCampaigns": {
+      "via": "campaigns",
+      "collection": "parent-campaign"
+    },
+    "goalTypes": {
+      "via": "campaigns",
+      "collection": "goal-type",
+      "dominant": true
+    },
+    "Location": {
+      "type": "string"
+    },
+    "campaign_requirements": {
+      "via": "campaign",
+      "collection": "campaign-requirement"
+    },
+    "billingAddress": {
+      "model": "address"
+    },
+    "isPublished": {
+      "type": "boolean",
+      "default": true
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "campaignPictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "goalAmount": {
+      "type": "biginteger"
+    },
+    "goalCurrent": {
+      "type": "biginteger"
+    }
+  }
+}

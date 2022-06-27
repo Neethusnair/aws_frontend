@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/visa-types",
+      "handler": "visa-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visa-types/count",
+      "handler": "visa-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visa-types/:id",
+      "handler": "visa-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/visa-types",
+      "handler": "visa-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/visa-types/:id",
+      "handler": "visa-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/visa-types/:id",
+      "handler": "visa-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

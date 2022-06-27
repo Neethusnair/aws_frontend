@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "joining_availabilities",
+  "info": {
+    "name": "Joining-availability"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

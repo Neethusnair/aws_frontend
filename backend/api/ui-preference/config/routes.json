@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ui-preferences",
+      "handler": "ui-preference.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ui-preferences/count",
+      "handler": "ui-preference.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ui-preferences/:id",
+      "handler": "ui-preference.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ui-preferences",
+      "handler": "ui-preference.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+    "method": "POST",
+    "path": "/ui-preference/soft_delete",
+    "handler": "ui-preference.soft_delete",
+    "config": {
+      "policies": []
+    }
+  },
+    {
+      "method": "PUT",
+      "path": "/ui-preferences/:id",
+      "handler": "ui-preference.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ui-preferences/:id",
+      "handler": "ui-preference.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

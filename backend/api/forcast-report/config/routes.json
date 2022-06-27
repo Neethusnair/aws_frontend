@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/forcast-reports",
+      "handler": "forcast-report.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/forcast-reports/count",
+      "handler": "forcast-report.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/forcast-reports/:id",
+      "handler": "forcast-report.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/forcast-reports",
+      "handler": "forcast-report.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/forcast-reports/:id",
+      "handler": "forcast-report.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/forcast-reports/:id",
+      "handler": "forcast-report.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

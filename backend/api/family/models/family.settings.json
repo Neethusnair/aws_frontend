@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "families",
+  "info": {
+    "name": "family",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "head": {
+      "model": "individual"
+    },
+    "members": {
+      "collection": "individual"
+    },
+    "invoices": {
+      "via": "family",
+      "collection": "invoice"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/preferences",
+      "handler": "preference.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preferences/count",
+      "handler": "preference.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preferences/:id",
+      "handler": "preference.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/preferences",
+      "handler": "preference.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/preferences/:id",
+      "handler": "preference.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/preferences/:id",
+      "handler": "preference.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "model": "names"
+    },
+    "address": {
+      "model": "address"
+    },
+    "number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -28,5 +28,6 @@ jobs:
     # Build the Docker image
     - name: Build docker image
       run: |-
-        docker build ./frontend -t  sreyo.jfrog.io/ns-docker-dev-local/frontend-docker
+        #docker build ./frontend -t  sreyo.jfrog.io/ns-docker-dev-local/frontend-docker
+        docker build ./backend -t  sreyo.jfrog.io/ns-docker-dev-local/frontend-docker
         docker push sreyo.jfrog.io/ns-docker-dev-local/frontend-docker 

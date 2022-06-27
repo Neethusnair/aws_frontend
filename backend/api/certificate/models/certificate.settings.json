@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificates",
+  "info": {
+    "name": "certificate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "certificateAuthority": {
+      "model": "certificate-authority"
+    },
+    "certificateType": {
+      "model": "certificate-type"
+    },
+    "certificateDate": {
+      "type": "date"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "candidateProfile": {
+      "model": "candidate-profile",
+      "via": "certificates"
+    }
+  }
+}

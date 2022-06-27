@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string"
+    },
+    "productSKU": {
+      "type": "string",
+      "unique": false
+    },
+    "productNickname": {
+      "type": "string"
+    },
+    "productDescription": {
+      "type": "text"
+    },
+    "productPicture": {
+      "model": "flag"
+    },
+    "productVideo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "productBrandName": {
+      "type": "string"
+    },
+    "productSpecifications": {
+      "model": "options"
+    },
+    "itemImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "itemQuantity": {
+      "type": "biginteger"
+    },
+    "productCatalog": {
+      "model": "catalog"
+    },
+    "asin": {
+      "type": "string",
+      "unique": false
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "campaign_requirements": {
+      "via": "product",
+      "collection": "campaign-requirement"
+    },
+    "itemImageUrl": {
+      "type": "string"
+    }
+  }
+}

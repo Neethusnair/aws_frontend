@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/remarks",
+      "handler": "remarks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/remarks/count",
+      "handler": "remarks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/remarks/:id",
+      "handler": "remarks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/remarks",
+      "handler": "remarks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/remarks/:id",
+      "handler": "remarks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/remarks/:id",
+      "handler": "remarks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

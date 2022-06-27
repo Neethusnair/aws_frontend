@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resumes",
+  "info": {
+    "name": "Resume",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "candidate_profile": {
+      "model": "candidate-profile"
+    },
+    "resumeUpload": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}
