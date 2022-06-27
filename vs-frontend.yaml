@@ -12,5 +12,6 @@ spec:
         - destination:
             host: frontend-service.default.svc.cluster.local
             port:
-              number: 8081
+              number: 1337
+              # number: 8081
             #subset: v2
