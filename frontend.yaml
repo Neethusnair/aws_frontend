@@ -31,7 +31,17 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 1337
-        # readinessProbe:
+        readinessProbe:
+          initialDelaySeconds: 60
+          periodSeconds: 5
+          failureThreshold: 10
+          timeoutSeconds: 11
+          exec:
+           command:
+             - cat
+             - /api/cart
+
+           
         #   httpGet:
         #     # scheme: HTTPS
         #     # path: /
