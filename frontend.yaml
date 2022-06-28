@@ -35,7 +35,7 @@ spec:
           initialDelaySeconds: 60
           periodSeconds: 5
           failureThreshold: 10
-          timeoutSeconds: 11
+          timeoutSeconds: 1
           exec:
            command:
              - cat
