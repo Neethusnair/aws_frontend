@@ -32,7 +32,7 @@ spec:
         ports:
         - containerPort: 1337
 
-        livenessProbe:
+        readinessProbe:
           httpGet:
             path: /api
             port: 1337
