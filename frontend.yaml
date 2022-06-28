@@ -31,6 +31,17 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 1337
+        readinessProbe:
+          httpGet:
+            scheme: HTTPS
+            path: /
+            httpHeaders:
+            - name: Host
+              value: awsdevmanagedorg.sreyo.in
+            port: 1337
+          initialDelaySeconds: 300
+          periodSeconds: 10
+          failureThreshold: 15
         
 ---
 apiVersion: v1
