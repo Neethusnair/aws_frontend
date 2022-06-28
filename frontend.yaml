@@ -35,7 +35,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /
-          port: 1337
+            port: 1337
           initialDelaySeconds: 200
           periodSeconds: 5
 
