@@ -34,7 +34,7 @@ spec:
         readinessProbe:
           httpGet:
             # scheme: HTTPS
-            path: /
+            # path: /
             httpHeaders:
             - name: Host
               value: awsdevmanagedorg.sreyo.in
@@ -42,7 +42,7 @@ spec:
           initialDelaySeconds: 300
           periodSeconds: 10
           failureThreshold: 15
-          timeoutSeconds: 10
+          timeoutSeconds: 11
         
 ---
 apiVersion: v1
