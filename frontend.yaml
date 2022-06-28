@@ -31,18 +31,18 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 1337
-        readinessProbe:
-          httpGet:
-            # scheme: HTTPS
-            # path: /
-            httpHeaders:
-            - name: Host
-              value: awsdevmanagedorg.sreyo.in
-            port: 80
-          initialDelaySeconds: 300
-          periodSeconds: 10
-          failureThreshold: 15
-          timeoutSeconds: 11
+        # readinessProbe:
+        #   httpGet:
+        #     # scheme: HTTPS
+        #     # path: /
+        #     httpHeaders:
+        #     - name: Host
+        #       value: awsdevmanagedorg.sreyo.in
+        #     port: 80
+        #   initialDelaySeconds: 300
+        #   periodSeconds: 10
+        #   failureThreshold: 15
+        #   timeoutSeconds: 11
         
 ---
 apiVersion: v1
